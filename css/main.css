@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.paisaje {
+  height: 100vh;
+  background-image: url(../assets/images/sun.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+img {
+  width: 100%;
+ 
+}
+
+.gat {
+  width: 40%;
+  position: absolute;
+  bottom: 3%;
+  right: 33%;
+}
+
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .paisaje {
+    background-image: url(../assets/images/night.jpg);
+  }
+  img {
+    content: url(../assets/images/kitten-night.png);
+  }
+}
+
+@media (min-width: 200px) and (max-width: 599px) {
+  .paisaje {
+    background-image: url(../assets/images/kitten-l.png);
+  }
+  img{
+    content: url(../assets/images/kitten-large.png);
+    
+  }
+}
